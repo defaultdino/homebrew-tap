@@ -6,6 +6,8 @@ class Rex < Formula
   license "MIT"
   head "https://github.com/defaultdino/rex.git", branch: "main"
 
+  option "with-cast", "Build with casting support"
+
   depends_on "rust" => :build
 
   on_linux do
@@ -14,7 +16,9 @@ class Rex < Formula
   end
 
   def install
-    system "cargo", "install", *std_cargo_args
+    args = std_cargo_args
+    args += ["--features", "cast"] if build.with? "cast"
+    system "cargo", "install", *args
   end
 
   test do
