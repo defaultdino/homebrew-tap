@@ -1,8 +1,8 @@
 class Rex < Formula
   desc "Terminal music player for Plex Media Server libraries"
   homepage "https://github.com/defaultdino/rex"
-  url "https://github.com/defaultdino/rexamp/archive/refs/tags/v3.2.0.tar.gz"
-  sha256 "08c3828d7c8f8ffe66e7ee27067b06aee815f501e6313eb8253241e98416bf55"
+  url "https://github.com/defaultdino/rexamp/archive/refs/tags/v3.3.0.tar.gz"
+  sha256 "6265899af45b27156ca2aa37970798544595216e367b57b0fbb2eb67b4a4a49c"
   license "MIT"
   head "https://github.com/defaultdino/rex.git", branch: "main"
 
